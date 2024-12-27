@@ -45,7 +45,36 @@ const pizzaData = [
     photoName: "pizzas/prosciutto.jpg",
     soldOut: false,
   },
+  {
+    name: "Pizza Diavola",
+    ingredients: "Tomato, mozarella, spicy salami, and chili peppers",
+    price: 14,
+    photoName: "pizzas/funghi.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Quattro Formaggi",
+    ingredients: "Mozarella, gorgonzola, parmesan, and ricotta cheese",
+    price: 16,
+    photoName: "pizzas/margherita.jpg",
+    soldOut: true,
+  },
+  {
+    name: "Pizza Capricciosa",
+    ingredients: "Tomato, mozarella, ham, mushrooms, artichokes, and olives",
+    price: 17,
+    photoName: "pizzas/prosciutto.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Pizza Marinara",
+    ingredients: "Tomato, garlic, and oregano",
+    price: 8,
+    photoName: "pizzas/spinaci.jpg",
+    soldOut: false,
+  },
 ];
+
 
 function App() {
   return (
@@ -80,7 +109,7 @@ function Menu() {
       {numPizzas > 0 ? (
         <>
           <p>
-            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            Authentic Italian cuisine. 10 creative dishes to choose from. All
             from our stone oven, all organic, all delicious.
           </p>
 
@@ -181,5 +210,3 @@ root.render(
   </React.StrictMode>
 );
 
-// React before 18
-// ReactDOM.render(<App />, document.getElementById("root"));
